@@ -13,6 +13,19 @@
         <input type="password" placeholder="Senha" id="senha">
         <input type="submit" value="Entrar" onclick="logar(); return false">
     </form>
+
+    <script>
+        function logar(){
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if (login == "admin" && senha == "admin"){
+                alert('Login feito com sucesso!!')
+            }else{
+                alert('Acesso negado')
+            }
+        }
+    </script>
     
 </body>
 </html>
